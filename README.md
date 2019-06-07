@@ -47,7 +47,7 @@ If working properly, you should see the "products" data structure
 Run the recommendation script:
 
 ```py
-python app/robo_advisor.py
+python app/groceries.py
 ```
 
 ## Testing
