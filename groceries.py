@@ -27,35 +27,49 @@ products = [
     {"id":20, "name": "Pomegranate Cranberry & Aloe Vera Enrich Drink", "department": "beverages", "aisle": "juice nectars", "price": 4.25}
 ] # based on data from Instacart: https://www.instacart.com/datasets/grocery-shopping-2017
 
+#
+# PRODUCTS PART 1
+#
+
 #print(products)
 # pprint(products)
 
-products_count = len(products)
+#products_count = len(products)
+#
+#
+#print("--------------")
+#print("THERE ARE " + str(products_count) + " PRODUCTS:")
+#print("--------------")
+#
+#def sort_by_name(any_product):
+#    return any_product ["name"]
+#
+#sorted_products = sorted(products, key=sort_by_name)
+#
+#for p in sorted_products:
+#    #price_usd = p["price"]
+#    price_usd = "${0:.2f}".format(p["price"])
+#    print(" *** " + p["name"] + " (" + str(price_usd) + ")")
+
+# DEPARTMENTS PART 2
+
+departments = []
+
+for p in products:
+    #departments.append(p["department"])
+    if p["department"] not in departments:
+        departments.append(p["department"])
+
+
+department_count = len(departments)
 
 
 print("--------------")
-print("THERE ARE " + str(products_count) + " PRODUCTS:")
+print("THERE ARE " + str(department_count) + " DEPARTMENTS:")
 print("--------------")
 
-def sort_by_name(any_product):
-    return any_product ["name"]
-
-sorted_products = sorted(products, key=sort_by_name)
-
-
-
-
-
-
-
-for p in sorted_products:
-    #price_usd = p["price"]
-    price_usd = "${0:.2f}".format(p["price"])
-    print(" *** " + p["name"] + " (" + str(price_usd) + ")")
-
-
-
-
+for d in departments:
+    print(d)
 
 
 # + All-Seasons Salt ($4.99)
