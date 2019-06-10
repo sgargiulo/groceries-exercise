@@ -48,6 +48,7 @@ sorted_products = sorted(products, key=sort_by_name)
 
 for p in sorted_products:
     #price_usd = p["price"]
+    ##this line below simply converts the price to a nice format...save this for future
     price_usd = "${0:.2f}".format(p["price"])
     print(" *** " + p["name"] + " (" + str(price_usd) + ")")
 
