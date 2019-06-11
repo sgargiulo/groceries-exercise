@@ -80,6 +80,7 @@ for d in unique_departments:
         label = "product"
     print(" +++ " + d.title() + " (" + str(matching_products_count) + " " + label + ")")
 
+breakpoint()
 
 
 
